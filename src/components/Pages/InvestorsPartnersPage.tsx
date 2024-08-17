@@ -7,10 +7,10 @@ const InvestorsPartnersPage = () => {
             <div className="w-full md:w-1/2 h-full flex flex-col justify-center items-center font-asap gap-3">
                 {/* <h1 className="text-3xl font-semibold text-center">Investors & Partners</h1> */}
                 <p className="text-center md:text-left lg:px-10 text-lg">
-                    At Abali Energy, we believe that strategic partnerships are key to driving business growth and expansion. That's why we actively seek out and prioritize collaborations that foster mutually beneficial relationships, leading to long-term success and progress for all parties involved.
+                    At Abali Energy, we believe that strategic partnerships are key to driving business growth and expansion. That&apos;s why we actively seek out and prioritize collaborations that foster mutually beneficial relationships, leading to long-term success and progress for all parties involved.
                 </p>
                 <p className="text-center md:text-left lg:px-10 text-lg">
-                    Whether you're an investor or partner, we're here to support you on your journey. Join our community today and let's build a stronger financial foundation for our clients.
+                    Whether you are an investor or partner, we are here to support you on your journey. Join our community today and let us build a stronger financial foundation for our clients.
                 </p>
                 <div className="flex flex-col md:flex-row h-full w-full justify-center items-center lg:px-10 pt-10 gap-5 md:gap-10">
                     <p className="text-center font-semibold text-2xl">
