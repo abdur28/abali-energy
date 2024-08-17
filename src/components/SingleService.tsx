@@ -10,7 +10,7 @@ const SingleService = ({image, name, description, id} : {image: string, name: st
                 </div>
             </div>
             <div className="w-full md:w-1/2 h-auto flex flex-col justify-center items-center">
-                <div className="flex flex-col gap-5">
+                <div className="flex flex-col gap-5 h-full w-full justify-center items-center md:items-start text-center md:text-left">
                     <h1 className="text-3xl">{name}</h1>
                     <p className="text-sm ">{description.slice(0, 700) + "..."}</p>
                     <Link href={`/services/${id}`}>
