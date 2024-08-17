@@ -19,7 +19,7 @@ const ServiceCard = ({serviceToString}: {serviceToString: string}) => {
         className={`w-[280px] h-[280px] hidden md:flex rounded-2xl cursor-pointer ${open === service.id ? "bg-secondary" : "bg-primary"}`}
         >
             <Link
-            href={`/services#${service.id}`}
+            href={`/services/${service.id}`}
             className="w-full h-full"
             >
             {open !== service.id && (

@@ -107,7 +107,9 @@ const NavMobile = () => {
         className="flex flex-col mx-7 w-full"
         initial="closed" animate={open ? "open" : "closed"}>
             <motion.div className="h-16 w-auto flex justify-between items-center">
-                <div>
+                <Link
+                href={"/"}
+                >
                     <Image
                     src="/logo.png"
                     alt="logo"
@@ -115,7 +117,7 @@ const NavMobile = () => {
                     height={150}
                     className="object-cover"
                     />
-                </div>
+                </Link>
                 <ToggleButton setOpen={setOpen} />
             </motion.div> 
             <motion.div 
