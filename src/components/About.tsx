@@ -64,7 +64,7 @@ const About = () => {
                     <div className="h-1/2 w-full flex flex-col justify-start items-center ">
                         <p 
                         className="text-center font-asap"
-                        >Abali Energy is committed to delivering sustainable and efficient energy solutions that empower communities and support environmental well-being. Our focus on responsible practices allows us to meet today's energy demands while protecting resources for future generations. We invite stakeholders, partners, and communities to collaborate with us and explore ways we can work together for a sustainable energy future.</p>
+                        >Abali Energy is committed to delivering sustainable and efficient energy solutions that empower communities and support environmental well-being. Our focus on responsible practices allows us to meet today&apos;s energy demands while protecting resources for future generations. We invite stakeholders, partners, and communities to collaborate with us and explore ways we can work together for a sustainable energy future.</p>
                     </div>
                 </div>
                 <div className="md:w-1/2 w-full flex flex-col justify-center items-center gap-5 md:pl-20">

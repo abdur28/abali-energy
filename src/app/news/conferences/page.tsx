@@ -31,10 +31,9 @@ const Conferences = () => {
                 </div>
                 <div className="w-full h-full flex flex-row flex-wrap justify-center items-center">
                     {conferences.map((conference, index) => (
-                        <div className="m-5">
+                        <div key={index} className="m-5">
                             <SingleBlog
                             id={conference.id}
-                            key={index}
                             type={conference.type}
                             image={conference.image}
                             title={conference.title}
@@ -44,10 +43,9 @@ const Conferences = () => {
                         </div>
                     ))}
                     {conferences.map((conference, index) => (
-                        <div className="m-5">
+                        <div key={index} className="m-5">
                             <SingleBlog
                             id={conference.id}
-                            key={index}
                             type={conference.type}
                             image={conference.image}
                             title={conference.title}
@@ -57,10 +55,9 @@ const Conferences = () => {
                         </div>
                     ))}
                     {conferences.map((conference, index) => (
-                        <div className="m-5">
+                        <div key={index} className="m-5">
                             <SingleBlog
                             id={conference.id}
-                            key={index}
                             type={conference.type}
                             image={conference.image}
                             title={conference.title}
@@ -70,10 +67,9 @@ const Conferences = () => {
                         </div>
                     ))}
                     {conferences.map((conference, index) => (
-                        <div className="m-5">
+                        <div key={index} className="m-5">
                             <SingleBlog
                             id={conference.id}
-                            key={index}
                             type={conference.type}
                             image={conference.image}
                             title={conference.title}
@@ -83,10 +79,9 @@ const Conferences = () => {
                         </div>
                     ))}
                     {conferences.map((conference, index) => (
-                        <div className="m-5">
+                        <div key={index} className="m-5">
                             <SingleBlog
                             id={conference.id}
-                            key={index}
                             type={conference.type}
                             image={conference.image}
                             title={conference.title}

@@ -16,8 +16,8 @@ const SingleItemPage = ({itemToString}: {itemToString: string}) => {
                         <Image src={item.image} alt="image" width={500} height={500} className="w-full h-full object-cover" />
                     </div>
                 )}
-                {item.optionalImages && item.optionalImages.map((image: any) => (
-                    <div className="w-[150px] md:w-[250px] h-full aspect-square p-2 ">
+                {item.optionalImages && item.optionalImages.map((image: any, index: number) => (
+                    <div key={index} className="w-[150px] md:w-[250px] h-full aspect-square p-2 ">
                         <Image src={image} alt="image" width={500} height={500} className="w-full h-full object-cover" />
                     </div>
                 ))}

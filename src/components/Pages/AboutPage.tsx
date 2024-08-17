@@ -64,7 +64,7 @@ const AboutPage = () => {
                             The vision emphasizes empowering communities with affordable energy while pursuing innovative green energy alternatives.
                         </p>
                         <p>
-                        Abali Energy is committed to delivering sustainable and efficient energy solutions that empower communities and support environmental well-being. Our focus on responsible practices allows us to meet today's energy demands while protecting resources for future generations. We invite stakeholders, partners, and communities to collaborate with us and explore ways we can work together for a sustainable energy future.
+                        Abali Energy is committed to delivering sustainable and efficient energy solutions that empower communities and support environmental well-being. Our focus on responsible practices allows us to meet today&apos;s energy demands while protecting resources for future generations. We invite stakeholders, partners, and communities to collaborate with us and explore ways we can work together for a sustainable energy future.
                         </p>
                     </div>
                     <div className="w-full md:w-1/2 h-full flex items-center justify-center">
@@ -168,7 +168,7 @@ const AboutPage = () => {
                     <h1 className="text-3xl font-semibold text-center">Our Team</h1>
                     <div className="w-full h-full flex flex-col md:flex-row items-center justify-center gap-20 md:gap-0">
                         {team.map((member, index) => (
-                            <div className="w-full md:w-1/3 h-full flex flex-col items-center justify-center px-10">
+                            <div key={index} className="w-full md:w-1/3 h-full flex flex-col items-center justify-center px-10">
                                 <div className="w-[300px] h-[300px] rounded-full border-4 overflow-hidden flex items-center justify-center mb-5">
                                 <Image
                                     src={member.image}

@@ -42,10 +42,9 @@ const Articles = () => {
                 </div>
                 <div className="w-full h-full flex flex-row flex-wrap justify-center items-center">
                     {articles.map((article, index) => (
-                        <div className="m-5">
+                        <div key={index} className="m-5">
                             <SingleBlog
                             id={article.id}
-                            key={index}
                             type={article.type}
                             image={article.image}
                             title={article.title}
@@ -55,10 +54,9 @@ const Articles = () => {
                         </div>
                     ))}
                     {articles.map((article, index) => (
-                        <div className="m-5">
+                        <div key={index} className="m-5">
                             <SingleBlog
                             id={article.id}
-                            key={index}
                             type={article.type}
                             image={article.image}
                             title={article.title}
@@ -68,10 +66,9 @@ const Articles = () => {
                         </div>
                     ))}
                     {articles.map((article, index) => (
-                        <div className="m-5">
+                        <div key={index} className="m-5">
                             <SingleBlog
                             id={article.id}
-                            key={index}
                             type={article.type}
                             image={article.image}
                             title={article.title}
@@ -81,10 +78,9 @@ const Articles = () => {
                         </div>
                     ))}
                     {articles.map((article, index) => (
-                        <div className="m-5">
+                        <div key={index} className="m-5">
                             <SingleBlog
                             id={article.id}
-                            key={index}
                             type={article.type}
                             image={article.image}
                             title={article.title}
@@ -94,10 +90,9 @@ const Articles = () => {
                         </div>
                     ))}
                     {articles.map((article, index) => (
-                        <div className="m-5">
+                        <div key={index} className="m-5">
                             <SingleBlog
                             id={article.id}
-                            key={index}
                             type={article.type}
                             image={article.image}
                             title={article.title}
