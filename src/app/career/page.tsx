@@ -4,10 +4,13 @@ import CareerPage from "@/components/Pages/CareerPage"
 const Career = () => {
 
     return (
-        <div>
+        <div className="w-full h-full min-h-screen ">
             <Header text="Career at Abali Energy" backgroundImage="https://media.istockphoto.com/id/2008257024/photo/the-chemical-engineer-working-the-late-night-shift-at-the-petroleum-oil-refinery-in-an.webp?b=1&s=612x612&w=0&k=20&c=n03Kf8jukB5nTd_JNghbA9FecSINMVPGpQ8Fkrls4Ts="/>
             <div className="w-full h-full flex justify-center items-center p-10">
-                <CareerPage />
+                {/* <CareerPage /> */}
+                <div className="w-full h-full flex justify-center items-center">
+                    <p className="text-4xl font-asap font-semibold">Coming Soon</p>
+                </div>
             </div>
         </div>
     )

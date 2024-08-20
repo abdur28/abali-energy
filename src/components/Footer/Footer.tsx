@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row justify-center text-white font-asap p-10 lg:mx-10 gap-5">
                 <div className="md:w-1/3 w-full h-full flex flex-col justify-center gap-2 ">
                     <h1 className="text-2xl font-semibold">Abali Energy</h1>
-                    <p className="">Founded in 2020, Abali Energy has become a leading regional oil marketing company in Africa. The company has heavily invested in the sourcing, transportation, storage, distribution, and marketing of fuels, kerosene, jet fuels, LPG, and lubricants for industrial and automotive systems.</p>
+                    <p className="">Founded in 2022, Abali Energy has become a leading regional oil marketing company in Africa. The company has heavily invested in the sourcing, transportation, storage, distribution, and marketing of fuels, kerosene, jet fuels, LPG, and lubricants for industrial and automotive systems.</p>
                 </div>
                 <div className="md:w-2/3 w-full h-full flex flex-col md:flex-row gap-5 md:gap-0 md:justify-between md:pl-10">
                     <div className="w-full h-full flex flex-col gap-2">
