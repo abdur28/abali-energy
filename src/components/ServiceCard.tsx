@@ -12,6 +12,9 @@ const ServiceCard = ({serviceToString}: {serviceToString: string}) => {
     return (
         <>
         <motion.div 
+        initial={{ opacity: 0, y: 100, scale: 0 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1, transition: { duration: 0.5 } }}
+        viewport={{ once: true }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onHoverStart={() => setOpen(service.id)}
@@ -41,18 +44,18 @@ const ServiceCard = ({serviceToString}: {serviceToString: string}) => {
             )}
             {open === service.id && (
                 <div
-                className="flex flex-col items-center h-full w-full text-center p-5  ">
-                    <div className="flex h-1/5 justify-center items-center">
+                className="flex flex-col justify-between items-center h-full w-full text-center p-5  ">
+                    <div className="flex justify-center items-center">
                          <h1 className="text-2xl text-white font-asap">{service.name}</h1>
                     </div>
-                    <div className="w-full h-4/5 justify-center items-center">
+                    <div className="w-full justify-center items-center">
                         <p className="text-white font-asap">{service.description}</p>
                     </div>
                 </div>
             )}
             </Link>
         </motion.div>
-
+ 
         {/* mobile */}
         <motion.div 
         whileTap={{ scale: 0.9 }}

@@ -7,6 +7,9 @@ const ProductCard = ({productToString}: {productToString: string}) => {
     const product = JSON.parse(productToString)
     return (
         <motion.div 
+        initial={{ opacity: 0, x: 100}}
+        whileInView={{ opacity: 1, x: 0 , transition: { duration: 0.5 } }}
+        viewport={{ once: true }}
         whileHover={{ scale: 0.95 }}
         whileTap={{ scale: 0.9 }}
         className="w-[250px] h-[250px] border-2 border-primary border-dashed hover:bg-primary hover:text-white">

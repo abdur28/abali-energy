@@ -3,22 +3,22 @@ import Header from "@/components/Header"
 import MediaSlider from "@/components/Slider/MediaSlider"
 import { describe } from "node:test"
 
-const media = [
-    {
-        id: 1,
-        title: "Abali Energy",
-        type: "video",
-        link: "https://www.youtube.com/embed/8YHsxXEVB1M",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sit facilis eligendi necessitatibus? Pariatur illo maxime repellendus, illum quod nemo quae repudiandae eos id facere nobis architecto nihil amet voluptatem!",
-    },
-    {
-        id: 2,  
-        title: "Kerosene Production",
-        type: "video",
-        link: "https://www.youtube.com/embed/8YHsxXEVB1M",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, provident. Modi, fugit sunt incidunt tempore eius recusandae, alias eaque nobis earum similique deserunt doloribus nam quae officiis est veritatis ipsum.",
-    }
-]
+// const media = [
+//     {
+//         id: 1,
+//         title: "Abali Energy",
+//         type: "video",
+//         link: "https://www.youtube.com/embed/8YHsxXEVB1M",
+//         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sit facilis eligendi necessitatibus? Pariatur illo maxime repellendus, illum quod nemo quae repudiandae eos id facere nobis architecto nihil amet voluptatem!",
+//     },
+//     {
+//         id: 2,  
+//         title: "Kerosene Production",
+//         type: "video",
+//         link: "https://www.youtube.com/embed/8YHsxXEVB1M",
+//         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, provident. Modi, fugit sunt incidunt tempore eius recusandae, alias eaque nobis earum similique deserunt doloribus nam quae officiis est veritatis ipsum.",
+//     }
+// ]
 
 
 
@@ -32,7 +32,7 @@ const NewsPage = () => {
                     <h1 className="text-3xl font-semibold px-10">Media Gallery</h1>
                     <p className="text-lg text-center md:px-20 lg:px-56 px-10">Feel free to peruse our selection of videos, where you will find an extensive array of content providing deeper insights and information about Abali Energy.</p>
                     <div className="w-full h-full mt-10  bg-primary/30">
-                        <MediaSlider slides={JSON.stringify(media)} />
+                        <MediaSlider />
                     </div>
                     <div className="">
                         <Blog type="articles" />

@@ -28,7 +28,7 @@ const InvestorsPartnersPage = () => {
             </div>
             <div className="w-full md:w-1/2 h-full flex items-center justify-center">
                 <div className=" h-[300px]  lg:h-[400px] overflow-hidden  lg:p-10">
-                    <Image src={"https://media.istockphoto.com/id/2164057774/photo/engineer-professional-asian-male-standing-confident-happy-against-petroleum-refinery-industry.jpg?s=612x612&w=0&k=20&c=D_rV-tEa0Mmx6hDeNldPDplk3DkWzqsTqWZkuX8H65k="}
+                    <Image src={"/investment-partners.jpg"}
                      alt="service" width={500} height={500} className="w-full h-full object-cover rounded-2xl"/>
                 </div>
             </div>

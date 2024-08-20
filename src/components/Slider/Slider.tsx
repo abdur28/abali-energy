@@ -36,21 +36,21 @@ const Slider = ({slides}: any) => {
                     >
                         <div className="flex flex-col justify-center lg:w-1/2 lg:pl-32 lg:justify-start lg:text-left lg:items-start items-center text-center gap-16 lg:gap-10 px-7">
                             <div className="flex flex-col justify-center items-center lg:justify-start lg:items-start ">
-                                <p className="text-primary italic font-semibold text-2xl"
+                                {/* <p className="text-primary italic font-semibold text-2xl"
                                 data-swiper-parallax="-300"
                                 data-swiper-parallax-duration="2000"
-                                >Abali <span className="text-secondary">Energy</span></p>
+                                >Abali <span className="text-secondary">Energy</span></p> */}
                                 <h1 className="text-white text-5xl font-semibold"
                                 data-swiper-parallax="-100"
                                 data-swiper-parallax-duration="2500"
-                                >Servicing New Frontiers</h1>
+                                >{slide.caption}</h1>
                             </div>
                             <div className="flex flex-col justify-center items-center lg:justify-start lg:items-start gap-5">
-                                <h3 className="text-white text-3xl"
+                                {/* <h3 className="text-white text-3xl"
                                 data-swiper-parallax="-100"
                                 data-swiper-parallax-opacity="0"
                                 data-swiper-parallax-duration="3000"
-                                >{slide.caption}</h3>
+                                >{slide.caption}</h3> */}
                                 <Link
                                 href={slide.buttonLink}
                                 >
@@ -61,48 +61,6 @@ const Slider = ({slides}: any) => {
                                         {slide.buttonDescription}
                                     </button>
                                 </Link>
-                                {/* <div className="flex flex-row mt-10 justify-between w-full">
-                                    <div className="next">
-                                        <button className="button">
-                                        <div className="button-box">
-                                            <span className="button-elem">
-                                            <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
-                                                ></path>
-                                            </svg>
-                                            </span>
-                                            <span className="button-elem">
-                                            <svg viewBox="0 0 46 40">
-                                                <path
-                                                d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
-                                                ></path>
-                                            </svg>
-                                            </span>
-                                        </div>
-                                        </button>
-                                    </div>
-                                    <div className="previous">
-                                        <button className="button">
-                                        <div className="button-box">
-                                            <span className="button-elem">
-                                            <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
-                                                ></path>
-                                            </svg>
-                                            </span>
-                                            <span className="button-elem">
-                                            <svg viewBox="0 0 46 40">
-                                                <path
-                                                d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
-                                                ></path>
-                                            </svg>
-                                            </span>
-                                        </div>
-                                        </button>
-                                    </div>
-                                </div> */}
                             </div>
                         </div>
                     </div>

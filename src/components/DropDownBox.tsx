@@ -40,7 +40,7 @@ const DropDownBox = ({ title, description }: { title: string; description: strin
         variants={variants}
         className="overflow-hidden"
       >
-        <div className="text-sm mt-3 font-Satoshi">
+        <div className="md:text-lg mt-3 font-Satoshi">
           {description}
         </div>
       </motion.div>

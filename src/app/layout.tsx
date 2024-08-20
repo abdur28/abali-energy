@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import WhatsAppPopUp from "@/components/WhatsAppPopUp/WhatsAppPopUp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         <NavBar />
         <main className="min-h-screen lg:pt-20 pt-[4.1rem]">
           {children}
+          <WhatsAppPopUp />
         </main>
         <Footer />
       </body>

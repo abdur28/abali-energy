@@ -1,21 +1,91 @@
 'use client'
 
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
+import Alert from "./Alert"
+import { useAlert } from "@/hooks/useAlert"
+import { useFormState } from "react-dom"
+import { sendEmail } from "@/lib/action"
 
 const ContactForm = () => {
-    const FormRef = useRef<any>()
+    const formRef = useRef<any>()
+    const [state, formAction] = useFormState(sendEmail, undefined);
+    const { show, showAlert, hideAlert, text, type } = useAlert();
+
+    const [form, setForm] = useState({ name: "", email: "", message: "", phone: "", subject: "", vacancy: "" })
+
+    const [loading, setLoading] = useState(false);
+
+    const sendingEmail = () => {
+        showAlert({
+            show: true,
+            text: "Sending emall...",
+            type: "success",
+        });
+        const formData = new FormData(formRef.current);
+        formData.append("name", form.name); 
+        formData.append("email", form.email); 
+        formData.append("message", form.message); 
+        formData.append("phone", form.phone); 
+        formData.append("subject", form.subject); 
+        formData.append("vacancy", form.vacancy);
+        formAction(formData);
+    };
+
+    const handleChange = (e: any): void => {
+        const { name, value } = e.target;
+        setForm((prevForm) => ({ ...prevForm, [name]: value }));
+    };
     
-    const [subject, setSubject] = useState("")
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [phone, setPhone] = useState("")
-    const [message, setMessage] = useState("")
-    const [vacancy, setVacancy] = useState("")
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
+        e.preventDefault();
+        setLoading(true);
+        sendingEmail()
+    };
+
+    useEffect(() => {
+        if (state) {
+            hideAlert();
+            if (state.status === "success"){
+                showAlert({
+                    text: "Thank you for your message 😃",
+                    type: "success",
+                    show: true
+                });
+                setTimeout(() => {
+                hideAlert();
+                setForm({
+                    name: "",
+                    email: "",
+                    message: "",
+                    phone: "",
+                    subject: "",
+                    vacancy: ""
+                });
+                }, 5000);
+                setLoading(false);
+            
+            } else {
+
+                    showAlert({
+                        show: true,
+                        text: state.message,
+                        type: "danger",
+                    });
+                    setTimeout(() => {
+                    hideAlert();
+                    }, 5000);
+                    setLoading(false);
+                    // router.refresh()
+            }
+        }
+    },[state])
 
     return (
         <div className="w-full h-full">
+            {show && <Alert text={text} type={type} />}
             <form 
-            ref={FormRef}
+            ref={formRef}
+            onSubmit={handleSubmit}
             action=""
             className="flex flex-col w-full h-full  rounded-2xl bg-primary/30 shadow-inner shadow-gray-500 p-10 font-asap gap-3"
             >
@@ -24,7 +94,8 @@ const ContactForm = () => {
                 name="subject"
                 className="w-full p-3 rounded-lg border-2 border-gray-400"
                 defaultValue=""
-                onChange={(e) => setSubject(e.target.value)}
+                value={form.subject}
+                onChange={handleChange}
                 required
                 >
                     <option value="" disabled selected hidden >What is your inquery about?</option>
@@ -32,11 +103,12 @@ const ContactForm = () => {
                     <option value="Investors & Partners">Investors & Partners</option>
                     <option value="Others">Others</option>
                 </select>
-                {subject === 'Career at Abali Energy' && (
+                {form.subject === 'Career at Abali Energy' && (
                     <select
                     name="vacancy"
+                    // value={form.vacancy}
                     className="w-full p-3 rounded-lg border-2 border-gray-400"
-                    onChange={(e) => setVacancy(e.target.value)}
+                    onChange={handleChange}
                     required
                     >
                         <option value="Mechanical Engineer">Mechanical Engineer</option>
@@ -46,40 +118,46 @@ const ContactForm = () => {
                 )}
                 <input
                 type="text"
+                value={form.name}
                 name="name"
                 placeholder="Full Name"
-                onChange={(e) => setName(e.target.value)}
+                onChange={handleChange}
                 className="w-full p-3 rounded-lg border-2 border-gray-400"
                 required
                 />
                 <input
                 type="email"
+                value={form.email}
                 name="email"
                 placeholder="Email"
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={handleChange}
                 className="w-full p-3 rounded-lg border-2 border-gray-400"
                 required
                 />
                 <input
                 type="tel"
+                value={form.phone}
                 name="phone"
                 placeholder="Phone Number"
-                onChange={(e) => setPhone(e.target.value)}
+                onChange={handleChange}
                 className="w-full p-3 rounded-lg border-2 border-gray-400"
                 required
                 />
                 <textarea
                 placeholder="Message"
-                onChange={(e) => setMessage(e.target.value)}
+                value={form.message}
+                onChange={handleChange}
                 name="message"
                 rows={5}
                 className="w-full p-3 rounded-lg border-2 border-gray-400"
+                required
                 />
                 <button
                 type="submit"
-                className="bg-primary px-4 py-2 rounded-lg text-lg text-white font-semibold hover:bg-secondary transition-colors"
+                disabled={loading}
+                className={`${loading ? "bg-secondary cursor-not-allowed" : "bg-primary"} px-4 py-2 rounded-lg text-lg text-white font-semibold hover:bg-secondary transition-colors`}
                 >
-                    Submit
+                    {loading ? "Sending..." : "Send Message"}
                 </button>
             </form>
         </div>

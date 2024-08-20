@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 const Footer = () => {
+    const aboutText = "Founded in 2022, Abali has quickly emerged as a leading regional oil marketing company in Africa. The company has made significant investments in the sourcing, transportation, storage, distribution, and marketing of fuels, kerosene, jet fuels, LPG, and lubricants for both industrial and automotive systems."
     return (
         <div className="w-full h-full bg-primary flex flex-col gap-5">
             <div className="flex flex-col md:flex-row justify-center text-white font-asap p-10 lg:mx-10 gap-5">
@@ -23,15 +24,18 @@ const Footer = () => {
                         <Link href="/contact" className="hover:text-secondary">Contact</Link>
                         <Link href="/investors-partners" className="hover:text-secondary">Investors & Partners</Link>
                         <Link href="/career" className="hover:text-secondary">Career at Abali Energy</Link>
-                        <Link href="/privacy-policy" className="hover:text-secondary">Privacy Policy</Link>
-                        <Link href="/terms-and-conditions" className="hover:text-secondary">Terms and Conditions</Link>
+                        {/* <Link href="/privacy-policy" className="hover:text-secondary">Privacy Policy</Link>
+                        <Link href="/terms-and-conditions" className="hover:text-secondary">Terms and Conditions</Link> */}
                     </div>
                     <div className="w-full h-full flex flex-col gap-2">
                         <h1 className="text-2xl font-semibold">Contact</h1>
-                        <p>Abali Energy Plaza, P.O. Box 12345, Aba, Nigeria</p>
-                        <a href="mailto:abalienergy@example.com" className="hover:text-secondary">abalienergy@example.com</a>
-                        <a href="tel:+234 803 550 0091" className="hover:text-secondary">+123 456 78-90</a>
-                        <div className="flex flex-row gap-6">
+                        <p>Osman Ahmed Roble Building, P.O.BOX 626, Makka Al Mukarama Road, Howl-Wadaag District, Mogadishu Somalia</p>
+                        <a href="mailto:abalienergy@example.com" className="hover:text-secondary">info@abalienergy.com</a>
+                        <div className="flex flex-col ">
+                        <a href="tel:+252770766835" className="hover:text-secondary">+252 770 766 835</a>
+                        <a href="tel:+254111628314" className="hover:text-secondary">+254 111 628 314</a>
+                        </div>
+                        <div className="flex flex-row gap-6 mt-2">
                             <Image src="/facebook.png" alt="" className="cursor-pointer" width={16} height={16} />
                             <Image src="/instagram.png" alt="" className="cursor-pointer" width={16} height={16} />
                             <Image src="/youtube.png" alt="" className="cursor-pointer" width={16} height={16} />

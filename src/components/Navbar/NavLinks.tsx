@@ -22,7 +22,7 @@ const NavLinks = () => {
                 },
                 {
                     name: "Our Team",
-                    link: "/about/team",
+                    link: "/about#team",
                 },
                 {
                     name: "Where We Operate",

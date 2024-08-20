@@ -13,11 +13,12 @@ const LocationPage = ({ locationsToString }: { locationsToString: string }) => {
                         {locations.map(( location: any, index: number) => (
                             <motion.div
                             key={index}
+                            initial={{ opacity: 0, y: 100, scale: 0 }}
+                            whileInView={{ opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: "easeInOut" } }}
+                            viewport={{ once: true }}
                             whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
                             >
-                                <Link
-                                href={`/about/location/${location.name.toLowerCase().replace(' ', '-')}`}
+                                <div
                                 className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] flex flex-col items-center justify-center border-2 border-primary p-5 m-2 md:m-5 hover:bg-primary">
                                     <div className="w-full h-2/3 flex flex-col items-center justify-center">
                                         <Image
@@ -29,7 +30,7 @@ const LocationPage = ({ locationsToString }: { locationsToString: string }) => {
                                         />
                                     </div>
                                     <p className="text-center text-sm md:text-lg">{location.name}</p>
-                                </Link>
+                                </div>
                             </motion.div>
                         ))}
                     </div>

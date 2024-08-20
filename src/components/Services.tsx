@@ -1,36 +1,41 @@
-import { describe } from "node:test"
+
 import ServiceCard from "./ServiceCard"
 import Link from "next/link"
 
 const services = [
     {
         id: 1,
-        name: "Trans-Continental",
-        description: "Abali Energy provides oil and gas consulting services throughout Africa, helping clients navigate the complexities of the industry and make informed decisions.",
-        shortDescription: "Oil and gas consulting services throughout Africa",
-        icon: "/africa.png"
+        icon: "/handshake.png",
+        name: "Consulting Services",
+        image: "/Consulting-Services.jpg",
+        optionalImages: [
+            "/Consulting-Services(1).jpg",
+            "/Consulting-Services(2).jpg",
+        ],
+        description: "Abali Energy Consulting Services in the oil and gas industry offers strategic advisory and operational expertise to optimize your energy investments.", 
     },
     {
         id: 2,
-        name: "Investment",
-        description: "The company acts as a broker in the oil and gas sector, facilitating transactions and ensuring that clients achieve the best possible outcomes.",
-        shortDescription: "Investing in the oil and gas sector",
-        icon: "/handshake.png"
+        icon: "/bar-chart.png",
+        name: "Brokerage Services",
+        image: "/Brokerage-Services.jpg",
+        optionalImages: [
+            "/Brokerage-Services(1).jpg",
+            "/Brokerage-Services(2).jpg",
+        ],
+        description: "Abali Energy Brokerage Services in the oil and gas industry offers expert facilitation of transactions, connecting buyers and sellers of oil, natural gas, and related commodities.", 
     }, 
     {
         id: 3,
-        name: "Import & Export",
-        description: "Abali Energy specializes in the import and export of crude oil, leveraging its extensive network to source and distribute high-quality products efficiently.",
-        shortDescription: "Import and export of crude oil",
-        icon: "/oil.png"
+        icon: "/oil.png",
+        name: "Import and Export of crude oil",
+        image: "/Import-Export-Services.jpg",
+        optionalImages: [
+            "/Import-Export-Services(1).jpg",
+            "/Import-Export-Services(2).jpg",
+        ],
+        description: "Abali Energy Import and Export Services in the oil and gas industry specialize in the global trade of crude oil, facilitating seamless cross-border transactions.", 
     },
-    {
-        id: 4,
-        name: "Sustainability",
-        description: "The commitment to sustainability is reflected in all services, with a focus on environmentally friendly practices and community empowerment.",
-        shortDescription: "Sustainability in the oil and gas industry",
-        icon: "/eco.png"
-    }
 ]
 
 

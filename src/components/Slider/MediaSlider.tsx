@@ -11,7 +11,7 @@ import Link from 'next/link';
 import './slider.scss'
 
 const MediaSlider = ({slides}: any) => {
-    const data = JSON.parse(slides)
+    const data = slides ? JSON.parse(slides) : []
     return (
         <>
         <Swiper 
@@ -26,7 +26,7 @@ const MediaSlider = ({slides}: any) => {
         loop={true}
         // autoplay={{ delay: 7000, disableOnInteraction: false }}
         className="mySwiper  w-full h-full">
-            {data.map((slide: any) => (           
+            {data.length > 0 ? data.map((slide: any) => (           
                 <SwiperSlide className='flex flex-col items-center justify-center  md:px-20' key={slide.id}>
                     <div className="w-full h-full flex flex-col md:flex-row p-10 gap-10 ">
                         <div className="w-full md:w-2/3 h-full flex justify-center items-center">
@@ -43,7 +43,14 @@ const MediaSlider = ({slides}: any) => {
                     </div>
                     <div className=''></div>
                 </SwiperSlide>
-            ))}
+            )) : (
+                <SwiperSlide className='flex flex-col items-center justify-center w-full h-full md:px-20' >
+                    <div className="w-full h-full flex flex-col justify-center items-center md:flex-row p-10 gap-10 ">
+                    <p className='text-2xl'>Coming Soon</p>
+                    </div>
+                    <div className=''></div>
+                </SwiperSlide>
+            )}
         </Swiper>
                     <div className="hidden lg:block relative z-30">
                         <div className="absolute h-full w-full top-[-16.1rem] left-5 prev-button">

@@ -12,12 +12,12 @@ const SingleItemPage = ({itemToString}: {itemToString: string}) => {
             <p className="text-lg lg:px-20 font-asap">{item.description}</p>
             <div className="w-full h-full flex flex-row flex-wrap justify-center items-center">
                 {item.image && (
-                    <div className="w-[150px] md:w-[250px] h-full aspect-square p-2">
+                    <div className="w-[250px] md:w-[350px] h-full  p-2">
                         <Image src={item.image} alt="image" width={500} height={500} className="w-full h-full object-cover" />
                     </div>
                 )}
                 {item.optionalImages && item.optionalImages.map((image: any, index: number) => (
-                    <div key={index} className="w-[150px] md:w-[250px] h-full aspect-square p-2 ">
+                    <div key={index} className="w-[250px] md:w-[350px] h-full  p-2 ">
                         <Image src={image} alt="image" width={500} height={500} className="w-full h-full object-cover" />
                     </div>
                 ))}

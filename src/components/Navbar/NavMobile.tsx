@@ -54,7 +54,7 @@ const NavMobile = () => {
                 },
                 {
                     name: "Our Team",
-                    link: "/about/team",
+                    link: "/about#team",
                 },
                 {
                     name: "Where We Operate",
@@ -106,15 +106,16 @@ const NavMobile = () => {
         <motion.div 
         className="flex flex-col mx-7 w-full"
         initial="closed" animate={open ? "open" : "closed"}>
-            <motion.div className="h-16 w-auto flex justify-between items-center">
+            <motion.div className="h-20 w-auto flex justify-between items-center">
                 <Link
                 href={"/"}
+                className="-ml-16"
                 >
                     <Image
                     src="/logo.png"
                     alt="logo"
-                    width={150}
-                    height={150}
+                    width={250}
+                    height={250}
                     className="object-cover"
                     />
                 </Link>

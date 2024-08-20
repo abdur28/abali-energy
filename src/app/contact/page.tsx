@@ -19,7 +19,7 @@ const Page = () => {
                         </div>
                         <div className="w-3/4 h-full flex flex-col">
                             <h3 className="text-xl font-semibold mb-2">Abali Energy HQ</h3>
-                            <p >Abali Energy Plaza, P.O. Box 12345, Aba, Nigeria</p>
+                            <p >Osman Ahmed Roble Building, P.O.BOX 626, Makka Al Mukarama Road, Howl-Wadaag District, Mogadishu Somalia</p>
                         </div>
                     </div>
                     <div className="w-full h-[1px] bg-gray-400 "/>
@@ -41,8 +41,8 @@ const Page = () => {
                         </div>
                         <div className="w-3/4 h-full flex flex-col">
                             <h3 className="text-xl font-semibold mb-2">Call Us</h3>
-                            <p>+234 123 456 789</p>
-                            <p>+234 987 654 321</p>
+                            <p>+252 770 766 835</p>
+                            <p>+254 111 628 314</p>
                         </div>
                     </div>
                     <div className="w-full h-[1px] bg-gray-400 "/>
@@ -66,7 +66,7 @@ const Page = () => {
                 </div>
             </div>
             <div className="w-full h-full flex justify-center items-center  lg:p-10">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71858.06033131605!2d37.44036788403392!3d55.748697451607775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5495b648241ed%3A0xd291561f220a6ca1!2sFili!5e0!3m2!1sen!2sru!4v1723864005574!5m2!1sen!2sru" width="100%" height="450" style={{border:0, borderRadius:"10px"}} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.2843972002215!2d45.32705565634459!3d2.0421177339337553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d58431b6cddb8bd%3A0x5a569b3871597ba6!2sTayo%20Constructions%20%26%20Agro%20Services!5e0!3m2!1sen!2sru!4v1724179924045!5m2!1sen!2sru" width="100%" height="450" style={{border:0, borderRadius:"10px"}} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         </>
