@@ -36,26 +36,26 @@ const About = () => {
                             initial={{opacity: 0, y: 100}}
                             whileInView={{opacity: 1, y: 0, transition: {duration: 1, ease: "easeInOut"}}}
                             viewport={{once: true}}
-                            className="h-40 w-40 flex justify-center rounded-full border-2 border-black overflow-hidden">
+                            className="h-40 w-40 flex justify-center items-center rounded-full border-2 border-black overflow-hidden">
                                 <Image
                                     src="https://media.istockphoto.com/id/1452806002/photo/beautiful-dusk-sky-over-an-offshore-oil-drilling-close-to-huntington-beach.webp?b=1&s=612x612&w=0&k=20&c=Kl0jWgMjqASGk0_wmMwpgaWP1skIVrRemjWM2T8LHHE="
                                     alt="Abali Energy"
                                     width={300}
                                     height={300}
-                                    className="object-cover"
+                                    className="object-cover w-full h-full"
                                 />
                             </motion.div>
                             <motion.div
                             initial={{opacity: 0, y: 100}}
                             whileInView={{opacity: 1, y: 0, transition: {duration: 0.4, ease: "easeInOut"}}}
                             viewport={{once: true}}
-                            className="h-28 w-28 flex justify-center  rounded-full border-2 border-black overflow-hidden mt-12 ml-2">
+                            className="h-28 w-28 flex justify-center items-center rounded-full border-2 border-black overflow-hidden mt-12 ml-2">
                                 <Image
                                     src="https://media.istockphoto.com/id/1403978838/photo/oil-and-gas-refinery-production-factory-workers-in-safety-equipment-walking-by-gas-pipes-and.webp?b=1&s=612x612&w=0&k=20&c=mhmELl_6FYN98lSPdaLXcs2MliWuy2CyLGd7Z9yhxdQ="
                                     alt="Abali Energy"
                                     width={300}
                                     height={300}
-                                    className="object-cover"
+                                    className="object-cover w-full h-full"
                                 />
                             </motion.div>
                         </div>
@@ -64,13 +64,13 @@ const About = () => {
                            initial={{opacity: 0, y: 100}}
                            whileInView={{opacity: 1, y: 0, transition: {duration: 1.3, ease: "easeInOut"}}}
                            viewport={{once: true}}
-                           className="h-32 w-32 flex justify-center  rounded-full border-2 border-black overflow-hidden -mt-3 ml-8">
+                           className="h-32 w-32 flex justify-center items-center rounded-full border-2 border-black overflow-hidden -mt-3 ml-8">
                                 <Image
                                     src="https://media.istockphoto.com/id/586921250/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B1%D0%B0%D1%80%D1%80%D0%B5%D0%BB%D0%B5%D0%B9-%D1%81%D1%8B%D1%80%D0%BE%D0%B9-%D0%BD%D0%B5%D1%84%D1%82%D0%B8.jpg?s=612x612&w=0&k=20&c=trM2jFinDKl4537O-Dlmi71XFnHVvc7o6qsE0q5msPo="
                                     alt="Abali Energy"
                                     width={300}
                                     height={300}
-                                    className="object-cover"
+                                    className="object-cover w-full h-full"
                                 />
                             </motion.div>     
                         </div>

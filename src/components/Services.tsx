@@ -41,7 +41,7 @@ const services = [
 
 const Services = () => {
     return (
-        <div className="lg:h-[115vh] h-[200vh] font-asap relative top-0 left-0 w-full"
+        <div className="lg:h-[115vh] h-[170vh] font-asap relative top-0 left-0 w-full"
         style={{
             backgroundColor: "#57993F",
             backgroundImage: "url('https://media.istockphoto.com/id/2154824393/ru/%D1%84%D0%BE%D1%82%D0%BE/team-inspection-engineers-working-with-laptop-of-oil-factory-and-gas-refinery-plant-industry.jpg?s=612x612&w=0&k=20&c=63HCEllaxV1ztd38t79hpg1hjgoMoL-35hEWmA_SoL0=')",

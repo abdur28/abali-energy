@@ -9,6 +9,7 @@ import Link from "next/link";
 const variants = {
     open: {
         height: "auto",
+        x: 0,
         opacity: 1,
         transition: { 
             duration: 0.3 
@@ -16,9 +17,10 @@ const variants = {
       },
       closed: {
         height: 0,
+        x: -500,
         opacity: 0,
         transition: { 
-            duration: 0.3 
+            duration: 0.3,
         }
       }
 };
@@ -165,7 +167,37 @@ const NavMobile = () => {
                             </div>
                         )}
                     </motion.div>
-                ))}      
+                ))}   
+                    <motion.div className="flex flex-col text-sm gap-5 border-t-2 border-gray-300 pt-5">
+                        <div className="flex flex-row items-center gap-8 ">
+                            <a href="mailto:info@abalienergy.com" className="flex flex-row items-center gap-2">
+                                <Image
+                                src="/email.png"
+                                alt="email"
+                                width={20}
+                                height={20}
+                                className="object-cover"
+                                />
+                                <p>info@abalienergy.com</p>
+                            </a>
+                            <a href="tel:+252770766835" className="flex flex-row items-center gap-2">
+                                <Image
+                                src="/phone-call.png"
+                                alt="phone"
+                                width={20}
+                                height={20}
+                                className="object-cover"
+                                />
+                                <p>+252 770 766 835</p>
+                            </a>
+                        </div>
+                        <div className="flex flex-row justify-center items-center gap-4 ">
+                            <Image src="/facebook.png" alt="" className="cursor-pointer" width={16} height={16} />
+                            <Image src="/instagram.png" alt="" className="cursor-pointer" width={16} height={16} />
+                            <Image src="/youtube.png" alt="" className="cursor-pointer" width={16} height={16} />
+                            <Image src="/x.png" alt="" className="cursor-pointer" width={16} height={16} />
+                        </div>
+                    </motion.div>   
                 </motion.div>  
             </motion.div>    
         </motion.div>
