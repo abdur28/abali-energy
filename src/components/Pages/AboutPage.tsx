@@ -197,6 +197,7 @@ const AboutPage = () => {
                     <div className="w-full h-full flex flex-col items-center justify-center gap-10 md:gap-5">
                         {team.map((member, index) => (
                             <motion.div
+                            key={index}
                             initial={{ opacity: 0, x: 100 }}
                             whileInView={{ opacity: 1, x: 0, transition: { duration: 1, ease: "easeInOut" } }}
                             viewport={{ once: true }}
