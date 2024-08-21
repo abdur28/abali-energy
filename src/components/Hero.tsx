@@ -24,7 +24,7 @@ const Hero = () => {
             caption: "Empowering communities through the provision of clean and efficient energy",
             buttonDescription: "Explore More",
             buttonLink: "/products",
-            background: "https://gazo.ru/upload/iblock/ef5/ef549ce1879937d4049360eb62b72784.jpg"
+            background: "https://i.pinimg.com/originals/b7/bd/0d/b7bd0dc4ba38bb18f24ade2557cbdcaf.jpg"
         }
     ]
 

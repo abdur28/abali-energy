@@ -5,6 +5,7 @@ import Header from "@/components/Header"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import TeamSlider from "../Slider/TeamSlider"
 
 const data = [
     {
@@ -28,6 +29,7 @@ const data = [
 ]
 
 const team = [
+    { id: 10, name: "Ayub Hassan Ulusow", position: "Environmental Advisor" },
     { id: 1, name: "Abshir Ali Mohamud", position: "CEO (Chief Executive Officer)" },
     { id: 2, name: "Ahmed Abdiladif Mohamud", position: "COO (Chief Operations Officer)" },
     { id: 3, name: "Samir Adilevich Mirzoev", position: "CTO (Chief Technology Officer)" },
@@ -37,7 +39,6 @@ const team = [
     { id: 7, name: "Kenneth Unda Mwakhanga", position: "Health and Safety Manager" },
     { id: 8, name: "Emmanuel Mwazo Mwang'ombe", position: "Economics Advisor" },
     { id: 9, name: "Adongo Yakubu Ayinbota", position: "Energy Advisor" },
-    { id: 10, name: "Ayub Hassan Ulusow", position: "Environmental Advisor" },
 ]
 
 const aboutText = "Abali Energy is a leading provider of comprehensive energy solutions, specializing in the oil and gas, renewable energy, and broader energy sectors. With a commitment to innovation and sustainability, we deliver a wide range of services, including consulting, brokerage, and import-export operations, tailored to meet the unique needs of our clients. Our team of industry experts combines deep market knowledge with a global network, enabling us to offer strategic insights and practical solutions that drive efficiency, profitability, and growth. Whether navigating the complexities of the oil and gas industry or pioneering new paths in renewable energy, Abali Energy is dedicated to empowering our clients to achieve their energy goals with confidence and success."
@@ -194,19 +195,8 @@ const AboutPage = () => {
                 </div>
                 <div id="team" className="w-full h-full flex flex-col items-center justify-center gap-10">
                     <h1  className="text-3xl font-semibold text-center">Our Team</h1>
-                    <div className="w-full h-full flex flex-col items-center justify-center gap-10 md:gap-5">
-                        {team.map((member, index) => (
-                            <motion.div
-                            key={index}
-                            initial={{ opacity: 0, x: 100 }}
-                            whileInView={{ opacity: 1, x: 0, transition: { duration: 1, ease: "easeInOut" } }}
-                            viewport={{ once: true }}
-                            className="w-full h-full flex flex-col lg:flex-row items-center justify-center lg:gap-3">
-                                <h3 className="text-xl font-semibold">{member.name}</h3>
-                                <p className="hidden lg:block">-</p>
-                                <p>{member.position}</p>
-                            </motion.div>
-                        ))}
+                    <div className="w-full h-full flex flex-col items-center justify-center  lg:px-20 ">
+                        <TeamSlider slides={JSON.stringify(team)} />
                     </div>  
                 </div>
                 

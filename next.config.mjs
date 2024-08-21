@@ -17,6 +17,10 @@ const nextConfig = {
           {
             protocol: "https",
             hostname: "gasandmoney.ru",
+          },
+          {
+            protocol: "https",
+            hostname: "i.pinimg.com",
           }
         ],
       },
