@@ -30,13 +30,13 @@ const data = [
 
 const team = [
     { id: 10, name: "Ayub Hassan Ulusow", position: "Environmental Advisor" },
-    { id: 1, name: "Abshir Ali Mohamud", position: "CEO (Chief Executive Officer)" },
-    { id: 2, name: "Ahmed Abdiladif Mohamud", position: "COO (Chief Operations Officer)" },
-    { id: 3, name: "Samir Adilevich Mirzoev", position: "CTO (Chief Technology Officer)" },
+    { id: 1, name: "Abshir Ali Mohamud", position: "Chief Executive Officer" },
+    { id: 2, name: "Ahmed Abdiladif Mohamud", position: "Chief Operations Officer" },
+    { id: 3, name: "Samir Adilevich Mirzoev", position: "Chief Technology Officer" },
     { id: 4, name: "Ana Gabriel Mileta", position: "HR Manager" },
     { id: 5, name: "Kumfo Kennedy Dzidefo", position: "Marketing Manager" },
     { id: 6, name: "Sayyid Nyangwara Mogaka", position: "Risk Assessment Manager" },
-    { id: 7, name: "Kenneth Unda Mwakhanga", position: "Health and Safety Manager" },
+    { id: 7, name: "Kenneth Unda Mwahanga", position: "Health and Safety Manager" },
     { id: 8, name: "Emmanuel Mwazo Mwang'ombe", position: "Economics Advisor" },
     { id: 9, name: "Adongo Yakubu Ayinbota", position: "Energy Advisor" },
 ]
