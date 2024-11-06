@@ -29,16 +29,17 @@ const data = [
 ]
 
 const team = [
-    { id: 10, name: "Ayub Hassan Ulusow", position: "Environmental Advisor" },
+    { id: 11, name: "Ayub Hassan Ulusow", position: "Environmental Advisor" },
     { id: 1, name: "Abshir Ali Mohamud", position: "Chief Executive Officer" },
     { id: 2, name: "Ahmed Abdiladif Mohamud", position: "Chief Operations Officer" },
     { id: 3, name: "Samir Adilevich Mirzoev", position: "Chief Technology Officer" },
-    { id: 4, name: "Ana Gabriel Mileta", position: "HR Manager" },
-    { id: 5, name: "Kumfo Kennedy Dzidefo", position: "Marketing Manager" },
-    { id: 6, name: "Sayyid Nyangwara Mogaka", position: "Risk Assessment Manager" },
-    { id: 7, name: "Kenneth Unda Mwahanga", position: "Health and Safety Manager" },
-    { id: 8, name: "Emmanuel Mwazo Mwang'ombe", position: "Economics Advisor" },
-    { id: 9, name: "Adongo Yakubu Ayinbota", position: "Energy Advisor" },
+    { id: 4, name: "Sayid Ali Mohamed Moalim", position: "General Manager" },
+    { id: 5, name: "Ana Gabriel Mileta", position: "HR Manager" },
+    { id: 6, name: "Kumfo Kennedy Dzidefo", position: "Marketing Manager" },
+    { id: 7, name: "Sayyid Nyangwara Mogaka", position: "Risk Assessment Manager" },
+    { id: 8, name: "Kenneth Unda Mwahanga", position: "Health and Safety Manager" },
+    { id: 9, name: "Emmanuel Mwazo Mwang'ombe", position: "Economics Advisor" },
+    { id: 10, name: "Adongo Yakubu Ayinbota", position: "Energy Advisor" },
 ]
 
 const aboutText = "Abali Energy is a leading provider of comprehensive energy solutions, specializing in the oil and gas, renewable energy, and broader energy sectors. With a commitment to innovation and sustainability, we deliver a wide range of services, including consulting, brokerage, and import-export operations, tailored to meet the unique needs of our clients. Our team of industry experts combines deep market knowledge with a global network, enabling us to offer strategic insights and practical solutions that drive efficiency, profitability, and growth. Whether navigating the complexities of the oil and gas industry or pioneering new paths in renewable energy, Abali Energy is dedicated to empowering our clients to achieve their energy goals with confidence and success."
