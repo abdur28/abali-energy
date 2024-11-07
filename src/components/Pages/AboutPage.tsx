@@ -33,7 +33,7 @@ const team = [
     { id: 1, name: "Abshir Ali Mohamud", position: "Chief Executive Officer" },
     { id: 2, name: "Ahmed Abdiladif Mohamud", position: "Chief Operations Officer" },
     { id: 3, name: "Samir Adilevich Mirzoev", position: "Chief Technology Officer" },
-    { id: 4, name: "Sayid Ali Mohamed Moalim", position: "General Manager" },
+    { id: 4, name: "SayidAli Mohamed Moalim", position: "General Manager" },
     { id: 5, name: "Ana Gabriel Mileta", position: "HR Manager" },
     { id: 6, name: "Kumfo Kennedy Dzidefo", position: "Marketing Manager" },
     { id: 7, name: "Sayyid Nyangwara Mogaka", position: "Risk Assessment Manager" },
