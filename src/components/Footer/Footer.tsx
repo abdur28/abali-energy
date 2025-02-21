@@ -33,7 +33,7 @@ const Footer = () => {
                         <a href="mailto:abalienergy@example.com" className="hover:text-secondary">info@abalienergy.com</a>
                         <div className="flex flex-col ">
                         <a href="tel:+252770766835" className="hover:text-secondary">+252 770 766 835</a>
-                        <a href="tel:+254768812792" className="hover:text-secondary">+254 768 812 792</a>
+                        <a href="tel:+252771730918" className="hover:text-secondary">+252 771 730 918</a>
                         </div>
                         <div className="flex flex-row gap-6 mt-2">
                             <Image src="/facebook.png" alt="" className="cursor-pointer" width={16} height={16} />
