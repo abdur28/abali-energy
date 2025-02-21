@@ -42,7 +42,7 @@ const Page = () => {
                         <div className="w-3/4 h-full flex flex-col">
                             <h3 className="text-xl font-semibold mb-2">Call Us</h3>
                             <p>+252 770 766 835</p>
-                            <p>+254 768 812 792</p>
+                            <p>+252 771 730 918</p>
                         </div>
                     </div>
                     <div className="w-full h-[1px] bg-gray-400 "/>
